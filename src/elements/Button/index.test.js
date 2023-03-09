@@ -14,7 +14,6 @@ test("Should render loading/spinner", () => {
   const { container, getByText } = render(<Button isLoading></Button>);
 
   expect(getByText(/loading/i)).toBeInTheDocument();
-  
   expect(container.querySelector("span")).toBeInTheDocument();
 })
 
