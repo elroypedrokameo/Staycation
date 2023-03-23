@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "elements/Button";
-import Image1 from "assets/images/image-category-1.jpg"
 
 export default function Categories({ data }) {
   return data.map((category, index1) => {
@@ -28,8 +27,7 @@ export default function Categories({ data }) {
                     )}
                     <figure className="img-wrapper" style={{ height: 180 }}>
                       <img
-                        src={Image1}
-                        // src={item.imageUrl}
+                        src={item.imageUrl}
                         alt={item.name}
                         className="img-cover"
                       />
